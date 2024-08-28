@@ -21,9 +21,9 @@ from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", index),
-    path("contact/", contact),
-    path("mes-informations/", mapresentation),
-    path("apropos/",apropos),
-    path("nos-services/",services)
+    path("", index , name="index"),
+    path("contactez-nous/", contact, name="contact"),
+    path("mes-informations/", mapresentation, name="mapresentation"),
+    path("apropos/",apropos, name="apropos"),
+    path("services/",services, name="services")
 ]
